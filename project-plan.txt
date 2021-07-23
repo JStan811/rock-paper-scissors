@@ -1,0 +1,14 @@
+- one function that represents the computer's play randomly returning R P or s
+- one function playing a round, taking the computer's play and player's play and deciding, then declaring the winner.
+    - the player's play need to be case-insensitive (rock, ROCK, or RocK)
+    - this should return results, not console.log() them
+- one function that represents one full game that plays 5 rounds and reports the winner
+    - this should console.log() the result of each round and the winner at the end
+- at some points prompt() user for their play
+
+first function, computerPlay:
+    - no parameters, 'function computerPlay()'
+    - how to randomly return one of three strings? maybe use a random number generator of sorts?
+        - function getRandomNum() - use Math.random() with Math.floor() to generate either 0, 1, or 2
+        - then use a conditional to return one of the strings based on the generated number'
+        - code for getRandomNum adapted from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
