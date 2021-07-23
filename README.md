@@ -14,3 +14,4 @@ Potential improvements for script:
     - for this I'd have to change the logic of the playRound() function. At this point, it only checks who wins, not how they win.
 - Add error checking to ensure user input is "rock", "paper", or "scissors."
     - for this I think I'd have to use some sort of loop that checks the user's input against a predefined set of values and either assigns the input to a variable if the input is acceptible or shows an error message and prompts again if it's not.
+- Add support for round "tying". At this point, the program doesn't have a way to determine or react to ties (rock against rock).
