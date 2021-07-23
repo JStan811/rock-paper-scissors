@@ -13,4 +13,4 @@ Potential improvements for script:
 - Add greater detail to round messages so they show type of win. Eg "Round won! Paper beats Rock."
     - for this I'd have to change the logic of the playRound() function. At this point, it only checks who wins, not how they win.
 - Add error checking to ensure user input is "rock", "paper", or "scissors."
-    - for this I think I'd have to use some sort of loop that checks the user's input against a predefined set of values and either assigns the input to a variable if the input is acceptible or shows and error message and prompts again if it is not.
+    - for this I think I'd have to use some sort of loop that checks the user's input against a predefined set of values and either assigns the input to a variable if the input is acceptible or shows an error message and prompts again if it's not.
