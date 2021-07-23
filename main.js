@@ -47,7 +47,7 @@ function game() {
     playerCount = 0;
     computerCount = 0;
 
-    // function that prompts user for play, then runs playRound using user's input. If user wins, increment playerCount by 1 and return round status message (victory of defeat) and total score. If user loses, increment computerCount by 1
+    // function that prompts user for play, then runs playRound using user's input. If user wins, increment playerCount by 1 and return round status message (victory or defeat) and total score. If user loses, increment computerCount by 1
     function roundMessageAndScore() {
         let playerPlay = prompt("Enter your play: ");
         let roundStatus = playRound(playerPlay, computerPlay());
