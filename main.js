@@ -61,11 +61,11 @@ function game() {
     }
 
     //run roundMessageAndScore 5 times for 5 rounds
-    roundMessageAndScore();
-    roundMessageAndScore();
-    roundMessageAndScore();
-    roundMessageAndScore();
-    roundMessageAndScore();
+    // roundMessageAndScore();
+    // roundMessageAndScore();
+    // roundMessageAndScore();
+    // roundMessageAndScore();
+    // roundMessageAndScore();
    
     //tally total score and declare winner
     if (playerCount > computerCount) {
@@ -77,3 +77,15 @@ function game() {
 }
 
 game();
+
+//Below this comment is the code for adding a UI re: TOP section DOM manipulation
+
+const butts = document.querySelectorAll('button');
+
+butts.forEach(butt => butt.addEventListener('click', function(e) {
+    console.log(e);
+}));
+
+// butts.addEventListener('click', function(e) {
+//     console.log(e);
+// });
