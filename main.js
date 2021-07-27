@@ -35,7 +35,7 @@ function playRound(playerPlay, computerPlay) {
     else {
         roundStatus = 'Round won!';
     }
-    return roundStatus;
+    console.log(roundStatus);
 }
 
 /* - one function that represents one full game that plays 5 rounds and reports the winner
@@ -78,14 +78,15 @@ function game() {
 
 game();
 
-//Below this comment is the code for adding a UI re: TOP section DOM manipulation
+//Below this comment is the code for adding a UI re: The Odin Project section DOM manipulation
+//function that runs playRound using the id from the click event, ie it sets the player selection based on which button is clicked
+function playRoundOnClick(e) {
+    let playerSelection = e.srcElement.id;
+    playRound(playerSelection, computerPlay());
+}
 
+//create node list reference to all buttons
 const butts = document.querySelectorAll('button');
 
-butts.forEach(butt => butt.addEventListener('click', function(e) {
-    console.log(e);
-}));
-
-// butts.addEventListener('click', function(e) {
-//     console.log(e);
-// });
+//runs playRoundOnClick every time a button is clicked
+butts.forEach(butt => butt.addEventListener('click', playRoundOnClick)); 
